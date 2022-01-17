@@ -10,6 +10,10 @@ html {
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -25,7 +29,13 @@ main {
 footer {
     background-color: #282828;
     height: 100px;
+    padding: 50px;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -45,4 +55,132 @@ main .main-content {
 .main-content .content-upgrade {
     background-color: #080b12;
     height: 70px;
+}
+
+.info-music {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.info-music .image-info {
+    width: 50px;
+}
+
+.info-music .name-music {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-music .icon-info-music {
+    padding-left: 30px;
+    color: #7d7d7d;
+    font-size: 18px;
+}
+
+.icon-info-music i {
+    padding: 0 5px;
+}
+
+.color-subtitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icon-info-music .fa-heart:hover {
+    color: white;
+}
+
+.icon-info-music .fa-folder:hover {
+    color: white;
+}
+
+.name-music .color-subtitle  {
+    color: #7d7d7d;
+    font-weight: bold;
+}
+
+.name-music .font-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.time-music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-music .play-bar {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    padding-bottom: 10px;
+}
+
+.play-bar .fa-play-circle {
+    font-size: 35px;
+    padding: 0 12px;
+}
+
+.play-bar .fa-play-circle:hover {
+    font-size: 40px;
+}
+
+.time-bar-position {
+    width: 500px;
+    position: relative;
+    display: inline-block;
+}
+
+.first-time-bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+.second-time-bar {
+    width: 30%;
+    background-color: #c1c1c1;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+
+.ball-time-bar {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+}
+
+.option-music {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.time-bar span {
+    padding: 0 20px;
+}
+
+.time-small {
+    width: 150px;
+}
+
+.option-music i {
+    font-size: 18px;
+}
+
+.second-time-bar:hover {
+    background-color: lightgreen;
 }
