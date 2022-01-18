@@ -20,6 +20,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 main {
@@ -46,8 +47,12 @@ footer {
 
 main .side-bar {
     background-color: black;
-    width: 200px;
-    flex-grow: 0;
+    width: 250px;
+    flex-shrink: 0;
+    height: calc( 100vh - 100px );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main .main-content {
@@ -65,7 +70,7 @@ main .main-content {
     width: 100%;
 }
 
-/* footer first section*/
+/* footer */
 
 .info-music {
     width: 30%;
@@ -218,4 +223,96 @@ main .main-content {
 
 .second-time-bar:hover {
     background-color: lightgreen;
+}
+
+/* side-bar */
+
+.side-bar {
+    padding: 0 8px;
+    color: #a3a3a3;
+    font-weight: bold;
+}
+
+.side-bar img {
+    padding: 15px 0;
+    width: 190px;
+}
+
+ul li {
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+.widget-side-bar i {
+    font-size: 25px;
+}
+
+li .icon-container {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.widget-side-bar .title-side-bar {
+    color: white;
+    padding: 10px 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.playlist {
+    padding: 0 5px;
+    list-style: none;
+}
+
+.playlist .fa-plus {
+    color: black;
+    background-color: #a3a3a3;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px
+}
+
+.image-profile img {
+    width: 100%;
+    height: 50px;
+}
+
+.download-account p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.download-account {
+    margin: 0 5px;
+}
+
+.profile-account {
+    padding-bottom: 10px;
+}
+
+.profile-account p {
+    display: inline-block;
+    color: white;
+}
+
+.profile-account .image-profile {
+    background-color: #a3a3a3;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border-radius: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.download-account:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #a3a3a3;
+    width: 100%;
+    margin: 15px auto;
 }
