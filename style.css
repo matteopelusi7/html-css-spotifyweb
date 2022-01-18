@@ -62,6 +62,10 @@ main .main-content {
 }
 
 .main-content .content-upgrade {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
     background-color: #080b12;
     height: 70px;
     position: absolute;
@@ -102,6 +106,10 @@ main .main-content {
 .color-subtitle:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.name-music span:hover {
+    color: white;
 }
 
 .icon-info-music .fa-heart:hover {
@@ -222,7 +230,7 @@ main .main-content {
 }
 
 .second-time-bar:hover {
-    background-color: lightgreen;
+    background-color: #adff2f;
 }
 
 /* side-bar */
@@ -231,6 +239,14 @@ main .main-content {
     padding: 0 8px;
     color: #a3a3a3;
     font-weight: bold;
+}
+
+.widget-side-bar {
+    padding-left: 10px;
+}
+
+.icon-side-bar {
+    list-style: none;
 }
 
 .side-bar img {
@@ -276,7 +292,8 @@ li .icon-container {
 
 .image-profile img {
     width: 100%;
-    height: 50px;
+    height: 65px;
+    margin-top: -15px;
 }
 
 .download-account p {
@@ -301,8 +318,8 @@ li .icon-container {
     background-color: #a3a3a3;
     display: inline-block;
     width: 30px;
-    height: 40px;
-    border-radius: 100%;
+    height: 30px;
+    border-radius: 50%;
     vertical-align: middle;
     overflow: hidden;
     margin: 0 5px;
@@ -315,4 +332,52 @@ li .icon-container {
     background-color: #a3a3a3;
     width: 100%;
     margin: 15px auto;
+}
+
+.green-bar {
+    background-color: #adff2f;
+    width: 3px;
+    height: 27px;
+    display: inline-block;
+    margin-left: -15px;
+    margin-right: 7px;
+    vertical-align: top;
+}
+
+.icon-side-bar .fa-home:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-account .download-account p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.active, .side-bar span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.side-bar .playlist li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.side-bar .fa-plus:hover{
+    background-color: white;
+}
+
+/* content-upgrade */
+
+.main-content .content-upgrade .upgrade {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 12px 32px;
+    border-radius: 30px;
+}
+
+.upgrade:hover {
+    font-size: 15px;
 }
