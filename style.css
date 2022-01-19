@@ -16,6 +16,11 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -380,4 +385,32 @@ li .icon-container {
 
 .upgrade:hover {
     font-size: 15px;
+}
+
+/* main */
+
+.main-content {
+    color: white;
+    padding-top: 90px;
+}
+
+.list-main-content {
+    color: #a3a3a3;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.list-main-content li:first-child::after {
+    content: '';
+    display: block;
+    background-color: #adff2f;
+    height: 2px;
+    width: 50%;
+    margin: 3px auto;
 }
