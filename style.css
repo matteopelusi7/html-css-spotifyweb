@@ -59,12 +59,14 @@ main .side-bar {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 1;
 }
 
 main .main-content {
     flex-grow: 1;
     position: relative;
     overflow-y: scroll;
+    height: calc( 100vh - 100px );
 }
 
 .main-content .content-upgrade {
@@ -74,7 +76,7 @@ main .main-content {
     padding: 0 20px;
     background-color: #080b12;
     height: 70px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -171,8 +173,8 @@ main .main-content {
 
 .time-bar-position {
     width: 100%;
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .first-time-bar {
@@ -189,19 +191,20 @@ main .main-content {
     background-color: #c1c1c1;
     height: 5px;
     border-radius: 10px;
-    position: absolute;
-    left: 0;
-    top: 45%;
 }
 
-.ball-time-bar {
+.second-time-bar:after {
+    content: '';
+    display: block;
     width: 15px;
     height: 15px;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    top: 20%;
-    left: 28%;
+    left: 30%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .option-music {
@@ -239,6 +242,10 @@ main .main-content {
     background-color: #adff2f;
 }
 
+.second-time-bar:hover:after {
+    display: block;
+}
+
 /* side-bar */
 
 .side-bar {
@@ -249,6 +256,7 @@ main .main-content {
 
 .widget-side-bar {
     padding-left: 10px;
+    overflow-y: auto;
 }
 
 .icon-side-bar {
