@@ -414,3 +414,39 @@ li .icon-container {
     width: 50%;
     margin: 3px auto;
 }
+
+.main-album {
+    padding: 20px 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.main-album .card {
+    width: 17%;
+}
+
+.title-main-album {
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.description-album {
+    text-align: center;
+}
+
+.description-album .title-album {
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.description-album .subtitle-album {
+    color: #a3a3a3;
+    font-weight: bold;
+}
+
+.card .photo-album {
+    width: 100%;
+    padding-bottom: 15px;
+}
