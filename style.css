@@ -58,6 +58,7 @@ main .side-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 main .main-content {
@@ -449,4 +450,20 @@ li .icon-container {
 .card .photo-album {
     width: 100%;
     padding-bottom: 15px;
+}
+
+.subtitle-main-album {
+    color: #a3a3a3;
+    padding-left: 30px;
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+.border-figure img {
+    border-radius: 999px;
+}
+
+
+.main-album .card-2 {
+    width: 15%;
 }
