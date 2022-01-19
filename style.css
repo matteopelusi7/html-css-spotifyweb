@@ -82,7 +82,7 @@ main .main-content {
     width: 100%;
 }
 
-/* footer */
+/* footer first section */
 
 .info-music {
     flex-basis: 250px;
@@ -92,8 +92,8 @@ main .main-content {
 }
 
 .info-music .image-info {
-    min-width: 50px;
-    max-width: 50px;
+    width: 50px;
+    flex-shrink: 0;
 }
 
 .info-music .name-music {
@@ -137,6 +137,8 @@ main .main-content {
     font-weight: bold;
     font-size: 15px;
 }
+
+/* footer second section */
 
 .time-music {
     display: flex;
@@ -206,6 +208,8 @@ main .main-content {
     transform: translate(-50%, -50%);
     display: none;
 }
+
+/* footer third section */
 
 .option-music {
     display: flex;
@@ -387,6 +391,7 @@ li .icon-container {
 
 .upgrade:hover {
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* main */
@@ -492,3 +497,6 @@ li .icon-container {
     z-index: 1;
     cursor: pointer;
 }
+
+/* media query */
+
