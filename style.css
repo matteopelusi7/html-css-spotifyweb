@@ -500,6 +500,14 @@ li .icon-container {
     opacity: 0.4;
 }
 
+.border-figure::after {
+    display: none;
+}
+
+.border-figure img:hover {
+    opacity: 0.4;
+}
+
 .photo-album:hover .fa-play-circle {
     display: block;
     z-index: 1;
@@ -527,6 +535,18 @@ li .icon-container {
         font-size: 50px;
     }
 
+    footer .time-bar-position {
+        min-width: 70px;
+    }
+
+    footer .info-music {
+        flex-basis: 50px;
+    }
+
+    footer .option-music {
+        flex-basis: 150px;
+    }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -542,6 +562,10 @@ li .icon-container {
 
     .photo-album .fa-play-circle {
         font-size: 40px;
+    }
+
+    footer .option-music {
+        display: none;
     }
 
 }
@@ -585,6 +609,10 @@ li .icon-container {
 
     .bottom-account .profile-account {
         padding-left: 1px;
+    }
+
+    footer .info-music, .option-music {
+        display: none;
     }
 
 }
